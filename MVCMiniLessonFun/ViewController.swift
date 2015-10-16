@@ -24,8 +24,10 @@ class ViewController: UIViewController {
         let song = Song(name: nameTextField.text!, artist: artistTextField.text!)
         SongController.sharedInstance.addSong(song)
         print("\(SongController.sharedInstance.allSongs)")
-//        let easyToReadAllSongs = SongController.sharedInstance.allSongs.map({$0.name + " - " + $0.artist})
-//        print("\(easyToReadAllSongs)")
+        
+        let easyToReadAllSongs = SongController.sharedInstance.allSongs.map({$0.name + " - " + $0.artist})
+        print("\(easyToReadAllSongs)")
+        
         print("\(SongController.sharedInstance.allSongs.count) Songs in allSongs")
     }
     
