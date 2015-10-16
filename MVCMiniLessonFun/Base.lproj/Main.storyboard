@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCMiniLessonFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-jP-yt1">
+                                <rect key="frame" x="44" y="84" width="515" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Artist" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aec-zq-Gre">
+                                <rect key="frame" x="44" y="147" width="515" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okY-5k-Fu9">
+                                <rect key="frame" x="147" y="46" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="31O-5G-vzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyn-ZJ-FLC">
+                                <rect key="frame" x="327" y="46" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="removeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AB9-p9-sNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="okY-5k-Fu9" firstAttribute="baseline" secondItem="Yyn-ZJ-FLC" secondAttribute="baseline" id="0ha-88-hHf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wBR-jP-yt1" secondAttribute="trailing" constant="21" id="88K-sg-kdP"/>
+                            <constraint firstItem="wBR-jP-yt1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="GFr-R9-JLq"/>
+                            <constraint firstItem="wBR-jP-yt1" firstAttribute="top" secondItem="okY-5k-Fu9" secondAttribute="bottom" constant="8" symbolic="YES" id="Hwa-sq-HKd"/>
+                            <constraint firstItem="wBR-jP-yt1" firstAttribute="trailing" secondItem="aec-zq-Gre" secondAttribute="trailing" id="Lte-Vp-10g"/>
+                            <constraint firstItem="aec-zq-Gre" firstAttribute="leading" secondItem="wBR-jP-yt1" secondAttribute="leading" id="MgS-zV-U4r"/>
+                            <constraint firstItem="okY-5k-Fu9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="147" id="XXd-8g-gxa"/>
+                            <constraint firstItem="aec-zq-Gre" firstAttribute="top" secondItem="wBR-jP-yt1" secondAttribute="bottom" constant="33" id="iS4-K0-0LQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yyn-ZJ-FLC" secondAttribute="trailing" constant="218" id="mdk-e0-XYn"/>
+                            <constraint firstItem="wBR-jP-yt1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="oQg-gW-pzF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistTextField" destination="aec-zq-Gre" id="uHJ-Oo-9rY"/>
+                        <outlet property="nameTextField" destination="wBR-jP-yt1" id="a6Z-SE-sJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="299"/>
+        </scene>
+    </scenes>
+</document>
