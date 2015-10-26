@@ -19,30 +19,16 @@ class ViewController: UIViewController {
 
     }
     
-    
     @IBAction func addButtonTouched(sender: AnyObject) {
         let song = Song(name: nameTextField.text!, artist: artistTextField.text!)
         SongController.sharedInstance.addSong(song)
-        print("\(SongController.sharedInstance.allSongs)")
-        
-        let easyToReadAllSongs = SongController.sharedInstance.allSongs.map({$0.name + " - " + $0.artist})
-        print("\(easyToReadAllSongs)")
-        
         print("\(SongController.sharedInstance.allSongs.count) Songs in allSongs")
     }
     
     @IBAction func removeButtonTouched(sender: AnyObject) {
-         let song = Song(name: nameTextField.text!, artist: artistTextField.text!)
-        SongController.sharedInstance.removeSong(song)
-        print("\(SongController.sharedInstance.allSongs)")
+        SongController.sharedInstance.removeSong(SongController.sharedInstance.allSongs.last!)
+        print("\(SongController.sharedInstance.allSongs.count) Songs in allSongs")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
 

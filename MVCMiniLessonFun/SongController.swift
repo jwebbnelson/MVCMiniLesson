@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 // CONTROLLER
 class SongController {
@@ -15,43 +16,38 @@ class SongController {
     static let sharedInstance = SongController()
     
     // AllSongs Property [Songs]
-    var allSongs:[Song]
-    
-    init() {
-        self.allSongs = []
-        loadFromPersistentStore()
-    }
-    
-    func loadFromPersistentStore() {
-        // Grab songs in dictionary form
-        let songDictionariesFromDefaults = NSUserDefaults.standardUserDefaults().objectForKey("Songs") as? [Dictionary<String,AnyObject>]
+    var allSongs:[Song] {
         
-        if let songDictionaries = songDictionariesFromDefaults {
-            // converts song dictionary array to song object array
-            self.allSongs = songDictionaries.map({Song(dictionary:$0)!})
+        let request = NSFetchRequest(entityName: "Song")
+        
+        let moc = Stack.sharedStack.managedObjectContext
+        
+        do {
+           return try moc.executeFetchRequest(request) as! [Song]
+        } catch {
+            return []
         }
+        
     }
     
     func saveToPersistentStore() {
-        // Save song dictionaries to NSUserDefaults
-        // Song -> Dictionary 
-        let songDictionaries = self.allSongs.map({$0.dictionaryRepresentation()})
-        NSUserDefaults.standardUserDefaults().setValue(songDictionaries, forKey: "Songs")
-        NSUserDefaults.standardUserDefaults().synchronize()
+      let moc = Stack.sharedStack.managedObjectContext
+        do {
+            try moc.save()
+        } catch {
+            print("Error saving \(error)")
+        }
     }
     
     // ADDS Songs to the array
     func addSong(songprameter: Song) -> () {
-        allSongs.append(songprameter)
         saveToPersistentStore()
     }
     
     // REMOVES Songs from the array
     func removeSong(specificSong: Song) -> () {
-        let index = allSongs.indexOf(specificSong)
-        
-        if let itemIndex = index {
-            allSongs.removeAtIndex(itemIndex)
+        if let moc = specificSong.managedObjectContext {
+            moc.deleteObject(specificSong)
         }
         saveToPersistentStore()
     }

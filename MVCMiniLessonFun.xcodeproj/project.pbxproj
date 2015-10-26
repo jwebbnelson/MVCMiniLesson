@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C82B0C1BDEC35E008B2F83 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83C82B0A1BDEC35E008B2F83 /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		83C82B0E1BDEC391008B2F83 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C82B0D1BDEC391008B2F83 /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
+		83C82B111BDEC400008B2F83 /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C82B0F1BDEC400008B2F83 /* Song+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		83C82B121BDEC400008B2F83 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C82B101BDEC400008B2F83 /* Song.swift */; settings = {ASSET_TAGS = (); }; };
 		83EF21B81BD0382000F08F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21B71BD0382000F08F59 /* AppDelegate.swift */; };
 		83EF21BA1BD0382000F08F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21B91BD0382000F08F59 /* ViewController.swift */; };
 		83EF21BD1BD0382000F08F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EF21BB1BD0382000F08F59 /* Main.storyboard */; };
@@ -14,7 +18,6 @@
 		83EF21C21BD0382000F08F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EF21C01BD0382000F08F59 /* LaunchScreen.storyboard */; };
 		83EF21CD1BD0382000F08F59 /* MVCMiniLessonFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21CC1BD0382000F08F59 /* MVCMiniLessonFunTests.swift */; };
 		83EF21D81BD0382000F08F59 /* MVCMiniLessonFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21D71BD0382000F08F59 /* MVCMiniLessonFunUITests.swift */; };
-		83EF21E61BD038E100F08F59 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21E51BD038E100F08F59 /* Song.swift */; settings = {ASSET_TAGS = (); }; };
 		83EF21E81BD03AD300F08F59 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF21E71BD03AD300F08F59 /* SongController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83C82B0B1BDEC35E008B2F83 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		83C82B0D1BDEC391008B2F83 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		83C82B0F1BDEC400008B2F83 /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83C82B101BDEC400008B2F83 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		83EF21B41BD0382000F08F59 /* MVCMiniLessonFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCMiniLessonFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EF21B71BD0382000F08F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EF21B91BD0382000F08F59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +56,6 @@
 		83EF21D31BD0382000F08F59 /* MVCMiniLessonFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVCMiniLessonFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EF21D71BD0382000F08F59 /* MVCMiniLessonFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCMiniLessonFunUITests.swift; sourceTree = "<group>"; };
 		83EF21D91BD0382100F08F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83EF21E51BD038E100F08F59 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		83EF21E71BD03AD300F08F59 /* SongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,8 @@
 		83EF21AB1BD0382000F08F59 = {
 			isa = PBXGroup;
 			children = (
+				83C82B0F1BDEC400008B2F83 /* Song+CoreDataProperties.swift */,
+				83C82B101BDEC400008B2F83 /* Song.swift */,
 				83EF21B61BD0382000F08F59 /* MVCMiniLessonFun */,
 				83EF21CB1BD0382000F08F59 /* MVCMiniLessonFunTests */,
 				83EF21D61BD0382000F08F59 /* MVCMiniLessonFunUITests */,
@@ -103,7 +111,8 @@
 			children = (
 				83EF21B71BD0382000F08F59 /* AppDelegate.swift */,
 				83EF21B91BD0382000F08F59 /* ViewController.swift */,
-				83EF21E51BD038E100F08F59 /* Song.swift */,
+				83C82B0A1BDEC35E008B2F83 /* Model.xcdatamodeld */,
+				83C82B0D1BDEC391008B2F83 /* Stack.swift */,
 				83EF21E71BD03AD300F08F59 /* SongController.swift */,
 				83EF21BB1BD0382000F08F59 /* Main.storyboard */,
 				83EF21BE1BD0382000F08F59 /* Assets.xcassets */,
@@ -261,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EF21E61BD038E100F08F59 /* Song.swift in Sources */,
 				83EF21BA1BD0382000F08F59 /* ViewController.swift in Sources */,
+				83C82B111BDEC400008B2F83 /* Song+CoreDataProperties.swift in Sources */,
+				83C82B0C1BDEC35E008B2F83 /* Model.xcdatamodeld in Sources */,
+				83C82B121BDEC400008B2F83 /* Song.swift in Sources */,
 				83EF21E81BD03AD300F08F59 /* SongController.swift in Sources */,
+				83C82B0E1BDEC391008B2F83 /* Stack.swift in Sources */,
 				83EF21B81BD0382000F08F59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +503,7 @@
 				83EF21DE1BD0382100F08F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83EF21DF1BD0382100F08F59 /* Build configuration list for PBXNativeTarget "MVCMiniLessonFunTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +512,7 @@
 				83EF21E11BD0382100F08F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83EF21E21BD0382100F08F59 /* Build configuration list for PBXNativeTarget "MVCMiniLessonFunUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,8 +521,22 @@
 				83EF21E41BD0382100F08F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83C82B0A1BDEC35E008B2F83 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83C82B0B1BDEC35E008B2F83 /* Model.xcdatamodel */,
+			);
+			currentVersion = 83C82B0B1BDEC35E008B2F83 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83EF21AC1BD0382000F08F59 /* Project object */;
 }
